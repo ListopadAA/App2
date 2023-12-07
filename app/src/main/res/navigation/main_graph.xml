@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/auth_graph">
+
+
+    <fragment
+        android:id="@+id/aksFragment"
+        android:name="com.example.myapplication.feature.aks.AksFragment"
+        android:label="AksFragment" />
+    <fragment
+        android:id="@+id/casesFragment"
+        android:name="com.example.myapplication.feature.cases.CasesFragment"
+        android:label="CasesFragment" />
+    <fragment
+        android:id="@+id/marketplaceFragment"
+        android:name="com.example.myapplication.feature.marketplace.MarketPlaceFragment"
+        android:label="MarketPlaceFragment" />
+    <fragment
+        android:id="@+id/partnersFragment"
+        android:name="com.example.myapplication.feature.partners.PartnersFragment"
+        android:label="PartnersFragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.myapplication.feature.profile.ProfileFragment"
+        android:label="ProfileFragment" />
+    <fragment
+        android:id="@+id/redactFragment"
+        android:name="com.example.myapplication.feature.redact.RedactFragment"
+        android:label="RedactFragment" />
+
+    <include app:graph="@navigation/auth_graph" />
+
+</navigation>

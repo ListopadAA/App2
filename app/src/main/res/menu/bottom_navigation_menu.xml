@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/aks"
+        android:enabled="true"
+        android:icon="@drawable/ic_aks"
+        android:title=""
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/cases"
+        android:enabled="true"
+        android:icon="@drawable/ic_case"
+        android:title=""
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/partners"
+        android:icon="@drawable/ic_partner"
+        android:title=""
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/marketplace"
+        android:enabled="true"
+        android:icon="@drawable/ic_marketplace"
+        android:title=""
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_profile"
+        android:title=""
+        app:showAsAction="always" />
+</menu>
