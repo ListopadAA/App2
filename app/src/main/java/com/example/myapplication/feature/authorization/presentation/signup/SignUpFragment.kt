@@ -77,7 +77,7 @@ class SignUpFragment : Fragment() {
                 auth.createUserWithEmailAndPassword(event.login, event.password)
                     .addOnCompleteListener(requireActivity()) { task ->
                         if (task.isSuccessful) {
-                            findNavController().navigate(R.id.casesFragment)
+                            findNavController().navigate(R.id.profileFragment)
                         } else {
                             Toast.makeText(
                                 requireContext(),

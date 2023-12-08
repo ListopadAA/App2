@@ -21,7 +21,6 @@ import com.google.firebase.auth.FirebaseAuth
 class ProfileFragment : Fragment() {
     private val auth: FirebaseAuth = FirebaseAuth.getInstance()
 
-    lateinit var bottomNav : BottomNavigationView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         AppCompatActivity().setContentView(R.layout.profile_fragment)
@@ -36,33 +35,6 @@ class ProfileFragment : Fragment() {
         val redbtn = AppCompatActivity().findViewById<ImageButton>(R.id.redbtn)
         redbtn.setOnClickListener {
             findNavController().navigate(R.id.redactFragment)
-        }
-        bottomNav = AppCompatActivity().findViewById(R.id.bottomNav) as BottomNavigationView
-        bottomNav.setOnItemSelectedListener {
-            when (it.itemId) {
-                R.id.aks -> {
-                    findNavController().navigate(R.id.aksFragment)
-                    true
-                }
-                R.id.cases -> {
-                    findNavController().navigate(R.id.casesFragment)
-                    true
-                }
-                R.id.partners -> {
-                    findNavController().navigate(R.id.partnersFragment)
-                    true
-                }
-                R.id.marketplace -> {
-                    findNavController().navigate(R.id.marketplaceFragment)
-                    true
-                }
-                R.id.profile -> {
-                    findNavController().navigate(R.id.profileFragment)
-                    true
-                }
-
-                else -> {true}
-            }
         }
     }
 }

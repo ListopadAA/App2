@@ -5,10 +5,15 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.myapplication.MainActivity
 import com.example.myapplication.R
 import com.example.myapplication.databinding.CasesFragmentBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 
 class CasesFragment : Fragment(R.layout.cases_fragment) {
@@ -16,6 +21,9 @@ class CasesFragment : Fragment(R.layout.cases_fragment) {
     private val auth: FirebaseAuth = FirebaseAuth.getInstance()
 
     private lateinit var binding: CasesFragmentBinding
+
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
